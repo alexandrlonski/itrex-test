@@ -48,3 +48,10 @@ select {
 	outline: none;
 	cursor: pointer;
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}

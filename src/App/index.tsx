@@ -1,7 +1,7 @@
+import "../index.scss";
 import { FC } from "react";
+import Main from "../page/Main";
 
-const App: FC = () => {
-	return <div>hello world</div>;
-};
+const App: FC = () => <Main />;
 
 export default App;

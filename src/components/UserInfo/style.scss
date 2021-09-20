@@ -1,0 +1,22 @@
+.userInfo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 70%;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 40px 30px;
+	&-block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: 10px;
+	}
+	&-row {
+		margin-top: 10px;
+	}
+}

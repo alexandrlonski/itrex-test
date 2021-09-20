@@ -1,0 +1,61 @@
+.filter {
+	position: relative;
+
+	&-btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 180px;
+		padding: 10px 8px;
+		color: white;
+		background-color: blue;
+		outline: none;
+		border: none;
+		border-radius: 6px;
+		&__icon {
+			width: 12px;
+			height: 6px;
+			background-image: url(../../assets/dropArrowW.svg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&-list {
+		display: none;
+		position: absolute;
+		top: 55px;
+		left: 50%;
+		width: 200px;
+		padding: 4px 0;
+		border-radius: 6px;
+		border: 1px solid #ccc;
+		transform: translateX(-50%);
+		&.open {
+			display: block;
+		}
+
+		&__item {
+			position: relative;
+			padding: 4px 8px;
+			transition: background-color 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #ccc;
+			}
+
+			&.selected::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 8px;
+				width: 5px;
+				height: 5px;
+				background: #000;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
